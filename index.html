@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Booking Website</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">Hotel Booking Website</h1>
+			<button class="menu-toggle">
+				<span class="icon"></span>
+			</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="hotel">
+				<h2>Hotel 1</h2>
+				<p class="description">Located in the heart of the city, Hotel 1 offers luxurious rooms with stunning views and top-notch amenities.</p>
+				<div class="image-slider">
+					<img src="hotel1-1.jpg" alt="Hotel 1">
+					<img src="hotel1-2.jpg" alt="Hotel 1">
+					<img src="hotel1-3.jpg" alt="Hotel 1">
+				</div>
+				<div class="room-types">
+					<h3>Room Types</h3>
+					<ul>
+						<li>Standard Room - $100 per night</li>
+						<li>Deluxe Room - $150 per night</li>
+						<li>Suite - $250 per night</li>
+					</ul>
+				</div>
+				<div class="booking-form">
+					<h3>Book a Room</h3>
+					<form>
+						<label for="checkin">Check-in Date:</label>
+						<input type="date" id="checkin" name="checkin"><br>
+
+						<label for="checkout">Check-out Date:</label>
+						<input type="date" id="checkout" name="checkout"><br>
+
+						<label for="guests">Number of Guests:</label>
+						<select id="guests" name="guests">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select><br>
+
+						<label for="roomtype">Room Type:</label>
+						<select id="roomtype" name="roomtype">
+							<option value="standard">Standard Room</option>
+							<option value="deluxe">Deluxe Room</option>
+							<option value="suite">Suite</option>
+						</select><br>
+
+						<button type="submit" class="btn-primary">Check Availability</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Hotel Booking Website</p>
+			<ul class="social-links">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>
